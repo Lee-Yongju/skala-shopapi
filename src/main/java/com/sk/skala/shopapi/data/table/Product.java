@@ -28,10 +28,10 @@ public class Product {
     private String productName;
 
     @Column(nullable = false)
-    private String productPrice;
+    private Double productPrice;
 
     @Builder
-    public Product(String productName, String productPrice) {
+    public Product(String productName, Double productPrice) {
         this.productName = productName;
         this.productPrice = productPrice;
     }
